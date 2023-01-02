@@ -30,6 +30,5 @@ class TasksWrapper:
         target_task["status"] = "completed"
         self.client.tasks().patch(tasklist=task.tasklist.id, task=task.id, body=target_task).execute()
 
-
     def get_task(self, task):
         return self.client.tasks().get(tasklist=task.tasklist.id, task=task.id).execute()
