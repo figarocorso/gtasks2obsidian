@@ -131,3 +131,6 @@ dmypy.json
 # do not mess with creds
 credentials.json
 token.json
+
+# VIM
+*.swp
